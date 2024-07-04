@@ -13,8 +13,8 @@ importers:
         version: 3.4.31
     devDependencies:
       '@vue/repl':
-        specifier: 4.2.1
-        version: 4.2.1
+        specifier: 4.3.1
+        version: 4.3.1
       '@vuepress/bundler-webpack':
         specifier: 2.0.0-rc.14
         version: 2.0.0-rc.14
@@ -34,8 +34,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       katex:
-        specifier: 0.16.10
-        version: 0.16.10
+        specifier: 0.16.11
+        version: 0.16.11
       mermaid:
         specifier: 10.9.1
         version: 10.9.1
@@ -50,7 +50,7 @@ importers:
         version: 2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.50
-        version: 2.0.0-rc.50(@vue/repl@4.2.1)(@vuepress/plugin-pwa@2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)))(@waline/client@3.2.6)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.10)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
+        version: 2.0.0-rc.50(@vue/repl@4.3.1)(@vuepress/plugin-pwa@2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)))(@waline/client@3.2.6)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.11)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
 
 packages:
 
@@ -1352,8 +1352,8 @@ packages:
   '@vue/reactivity@3.4.31':
     resolution: {integrity: sha512-VGkTani8SOoVkZNds1PfJ/T1SlAIOf8E58PGAhIOUDYPC4GAmFA2u/E14TDAFcf3vVDKunc4QqCe/SHr8xC65Q==}
 
-  '@vue/repl@4.2.1':
-    resolution: {integrity: sha512-kPpoAp0hQ1sKIGXEHtVdtdh2BgL97SAizEvCqRDB3LmgIYCPbzInwd4mqYkHstAhJPmkNslLd3rwfceMwzwinQ==}
+  '@vue/repl@4.3.1':
+    resolution: {integrity: sha512-yzUuLhR+MqOGBDES+xbnm27SfPIEv7XKwhFWWpQhL7HUbXj77GVu+x50Q56JhCWWKTUJzk9MOvAn7bSgdvB5og==}
 
   '@vue/runtime-core@3.4.31':
     resolution: {integrity: sha512-LDkztxeUPazxG/p8c5JDDKPfkCDBkkiNLVNf7XZIUnJ+66GVGkP+TIh34+8LtPisZ+HMWl2zqhIw0xN5MwU1cw==}
@@ -3100,8 +3100,8 @@ packages:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
 
-  katex@0.16.10:
-    resolution: {integrity: sha512-ZiqaC04tp2O5utMsl2TEZTXxa6WSC4yo0fv5ML++D3QZv/vx2Mct0mTlRx3O+uUkjfuAgOkzsCmq5MiUEsDDdA==}
+  katex@0.16.11:
+    resolution: {integrity: sha512-RQrI8rlHY92OLf3rho/Ts8i/XvjgguEjOkO1BEXcU3N8BqPpSzBNwV/G0Ukr+P/l3ivvJUE/Fa/CwbS6HesGNQ==}
     hasBin: true
 
   khroma@2.1.0:
@@ -5859,13 +5859,13 @@ snapshots:
     optionalDependencies:
       markdown-it: 14.1.0
 
-  '@mdit/plugin-katex-slim@0.12.0(katex@0.16.10)(markdown-it@14.1.0)':
+  '@mdit/plugin-katex-slim@0.12.0(katex@0.16.11)(markdown-it@14.1.0)':
     dependencies:
       '@mdit/plugin-tex': 0.12.0(markdown-it@14.1.0)
       '@types/katex': 0.16.7
       '@types/markdown-it': 14.1.1
     optionalDependencies:
-      katex: 0.16.10
+      katex: 0.16.11
       markdown-it: 14.1.0
 
   '@mdit/plugin-mark@0.12.0(markdown-it@14.1.0)':
@@ -6235,7 +6235,7 @@ snapshots:
     dependencies:
       '@vue/shared': 3.4.31
 
-  '@vue/repl@4.2.1': {}
+  '@vue/repl@4.3.1': {}
 
   '@vue/runtime-core@3.4.31':
     dependencies:
@@ -8313,7 +8313,7 @@ snapshots:
 
   jsonpointer@5.0.1: {}
 
-  katex@0.16.10:
+  katex@0.16.11:
     dependencies:
       commander: 8.3.0
 
@@ -8521,7 +8521,7 @@ snapshots:
       dayjs: 1.11.11
       dompurify: 3.0.9
       elkjs: 0.9.1
-      katex: 0.16.10
+      katex: 0.16.11
       khroma: 2.1.0
       lodash-es: 4.17.21
       mdast-util-from-markdown: 1.3.1
@@ -9792,7 +9792,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  vuepress-plugin-md-enhance@2.0.0-rc.50(@vue/repl@4.2.1)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.10)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)):
+  vuepress-plugin-md-enhance@2.0.0-rc.50(@vue/repl@4.3.1)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.11)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)):
     dependencies:
       '@mdit/plugin-alert': 0.12.0(markdown-it@14.1.0)
       '@mdit/plugin-align': 0.12.0(markdown-it@14.1.0)
@@ -9805,7 +9805,7 @@ snapshots:
       '@mdit/plugin-img-mark': 0.12.0(markdown-it@14.1.0)
       '@mdit/plugin-img-size': 0.12.0(markdown-it@14.1.0)
       '@mdit/plugin-include': 0.12.0(markdown-it@14.1.0)
-      '@mdit/plugin-katex-slim': 0.12.0(katex@0.16.10)(markdown-it@14.1.0)
+      '@mdit/plugin-katex-slim': 0.12.0(katex@0.16.11)(markdown-it@14.1.0)
       '@mdit/plugin-mark': 0.12.0(markdown-it@14.1.0)
       '@mdit/plugin-mathjax-slim': 0.12.0(markdown-it@14.1.0)
       '@mdit/plugin-plantuml': 0.12.0(markdown-it@14.1.0)
@@ -9827,10 +9827,10 @@ snapshots:
       vuepress: 2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)
       vuepress-shared: 2.0.0-rc.50(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
     optionalDependencies:
-      '@vue/repl': 4.2.1
+      '@vue/repl': 4.3.1
       echarts: 5.5.1
       flowchart.ts: 3.0.0
-      katex: 0.16.10
+      katex: 0.16.11
       mermaid: 10.9.1
       reveal.js: 5.1.0
       sass-loader: 14.2.1(sass@1.77.6)(webpack@5.92.1)
@@ -9855,7 +9855,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.50(@vue/repl@4.2.1)(@vuepress/plugin-pwa@2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)))(@waline/client@3.2.6)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.10)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)):
+  vuepress-theme-hope@2.0.0-rc.50(@vue/repl@4.3.1)(@vuepress/plugin-pwa@2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)))(@waline/client@3.2.6)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.11)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
@@ -9887,7 +9887,7 @@ snapshots:
       vue: 3.4.31
       vuepress: 2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31)
       vuepress-plugin-components: 2.0.0-rc.50(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
-      vuepress-plugin-md-enhance: 2.0.0-rc.50(@vue/repl@4.2.1)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.10)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
+      vuepress-plugin-md-enhance: 2.0.0-rc.50(@vue/repl@4.3.1)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.11)(markdown-it@14.1.0)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1))(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
       vuepress-shared: 2.0.0-rc.50(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
     optionalDependencies:
       '@vuepress/plugin-pwa': 2.0.0-rc.37(vuepress@2.0.0-rc.14(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.31))
