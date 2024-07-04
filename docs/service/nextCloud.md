@@ -13,7 +13,9 @@ date: 2023-05-22
 article: true
 ---
 
-在`Docker`部署`NextCloud`服务，并使用`MySQL`和`Redis`做数据库。
+<del>在`Docker`部署`NextCloud`服务，并使用`MySQL`和`Redis`做数据库。</del>
+
+推荐:[使用`nextcloud/all-in-one`进行部署](./all-in-one.html)
 
 <!-- more -->
 
