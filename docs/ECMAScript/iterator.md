@@ -1,6 +1,6 @@
 ---
 title: 可迭代对象
-icon: web
+icon: javascript
 category: 前端
 tag:
   - javascript
