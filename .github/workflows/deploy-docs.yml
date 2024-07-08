@@ -35,6 +35,11 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8000
         run: pnpm run build
 
+      - name: Delete gh-pages branch
+        run: |
+          git fetch origin
+          git push origin --delete gh-pages || true  # 忽略错误，若分支不存在
+
       - name: Deploy Dist
         uses: JamesIves/github-pages-deploy-action@v4
         with:
