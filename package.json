@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--max-old-space-size=4096' vuepress-webpack dev docs",
-    "clean-dev": "vuepress-webpack dev docs --clean-cache",
+    "clean-dev": "cross-env NODE_OPTIONS='--max-old-space-size=4096' vuepress-webpack dev docs --clean-cache",
     "build": "vuepress-webpack build docs"
   },
   "devDependencies": {
