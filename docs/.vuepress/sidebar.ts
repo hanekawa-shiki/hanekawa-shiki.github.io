@@ -27,6 +27,9 @@ export default sidebar({
     '2.pm2&bash',
     '3.giuhub_actions'
   ],
-  '/rust/': 'structure',
+  '/rust/': [
+    '1.setting',
+    '2.basicSyntax',
+  ],
   '/workRecord/': 'structure'
 })
