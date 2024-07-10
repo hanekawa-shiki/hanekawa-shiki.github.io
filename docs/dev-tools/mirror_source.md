@@ -1,7 +1,7 @@
 ---
 title: 镜像源收集
 icon: link
-category: 开发必备
+category: 镜像源
 tag:
   - node
   - pnpm
