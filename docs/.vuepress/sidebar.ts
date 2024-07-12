@@ -31,5 +31,8 @@ export default sidebar({
     '1.setting',
     '2.basicSyntax',
   ],
-  '/workRecord/': 'structure'
+  '/workRecord/': 'structure',
+  '/mobile/': [
+    '0.environment_windows'
+  ],
 })
