@@ -22,10 +22,10 @@ export default sidebar({
     '6.ui_library',
   ],
   '/website_build/': [
-    '0.environment_windows',
-    '1.environment_server',
-    '2.pm2&bash',
-    '3.giuhub_actions'
+    'environment_windows',
+    'environment_server',
+    'pm2&bash',
+    'giuhub_actions'
   ],
   '/rust/': [
     '1.setting',
