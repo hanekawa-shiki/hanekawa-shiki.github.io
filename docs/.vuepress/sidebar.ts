@@ -33,6 +33,6 @@ export default sidebar({
   ],
   '/workRecord/': 'structure',
   '/mobile/': [
-    '0.environment_windows'
+    'adaptation'
   ],
 })
