@@ -24,7 +24,7 @@ article: false
 
 ```html
 <!--仅对移动端有效  通用设置-->
-<meta name = "viewport" content="width=device-width" initial-scale=1.0 maximum-scale=1.0 user-scalable=no>
+<meta name="viewport" content="width=device-width" initial-scale=1.0 maximum-scale=1.0 user-scalable=no>
 ```
 
 ## `rem`适配
