@@ -28,8 +28,8 @@ export default sidebar({
     'giuhub_actions'
   ],
   '/rust/': [
-    '1.setting',
-    '2.basicSyntax',
+    'setting',
+    'basicSyntax',
   ],
   '/workRecord/': 'structure',
   '/mobile/': [
