@@ -121,3 +121,16 @@ fn main() {
 
 ### 函数
 
+`Rust`代码中的函数和变量名使用`snake case`规范风格。所有字母都是小写并使用下划线分隔单词。
+
+```rust
+fn main() {
+    println!("Hello, world!");
+
+    another_function();
+}
+
+fn another_function() {
+    println!("Another function.");
+}
+```
