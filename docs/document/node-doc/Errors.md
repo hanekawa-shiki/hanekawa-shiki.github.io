@@ -12982,7 +12982,7 @@ Node.js 开发团队引入了对非上下文感知原生模块的限制，以促
 
 假设你有一个名为 `awesome-native-module` 的原生模块，它没有被设计成上下文感知的。当你尝试在你的 Node.js 应用程序中使用 `require('awesome-native-module')` 加载它时，如果 Node.js 要求所有原生模块都必须是上下文感知的，你就会遇到以下错误:
 
-```console
+```txt
 Error [ERR_NON_CONTEXT_AWARE_DISABLED]: Loading non-context-aware native module in process-level context is disabled
 ```
 
