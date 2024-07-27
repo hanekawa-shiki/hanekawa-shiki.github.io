@@ -1,0 +1,120 @@
+---
+icon: css
+category: css
+tag:
+  - css
+isOriginal: true
+timeline: true
+date: 2024-07-27
+article: true
+---
+
+<!-- more -->
+
+# `CSS`丝滑边框线条动画
+
+ <div class="container">
+   <div class="moving-element"></div>
+   <div class="element"></div>
+ </div>
+
+ <style>
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: 50px; /* 确保有足够空间显示动画 */
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.element {
+  background: rgba(9, 9, 11, 0.38);
+  border: 1px solid rgb(30, 41, 59);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  box-sizing: border-box;
+}
+
+.moving-element {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-image: radial-gradient(#cbacf9 40%,transparent 80%);
+    border-radius: 40px;
+    animation: moveAround 8s linear infinite;
+    transform: translate(-40px, -40px);
+}
+
+@keyframes moveAround {
+  0% { left: 40px; top: 0px; }
+  28.93% { left: 360px; top: 0px; }
+  33.99% { left: 400px; top: 40px; }
+  44.82% { left: 400px; top: 160px; }
+  49.88% { left: 360px; top: 200px; }
+  78.81% { left: 40px; top: 200px; }
+  83.87% { left: 0px; top: 160px; }
+  94.70% { left: 0px; top: 40px; } 
+  100% { left: 40px; top: 0px; }
+}
+ </style>
+ 
+ ```html
+  <div class="container">
+   <div class="moving-element"></div>
+   <div class="element"></div>
+ </div>
+ ```
+
+ ```css
+ .container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  margin: 50px; /* 确保有足够空间显示动画 */
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.element {
+  background: rgba(9, 9, 11, 0.38);
+  border: 1px solid rgb(30, 41, 59);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  box-sizing: border-box;
+}
+
+.moving-element {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(#cbacf9 40%,transparent 80%);
+  border-radius: 40px;
+  animation: moveAround 8s linear infinite;
+  transform: translate(-40px, -40px);
+}
+
+@keyframes moveAround {
+  0% { left: 40px; top: 0px; }
+  28.93% { left: 360px; top: 0px; }
+  33.99% { left: 400px; top: 40px; }
+  44.82% { left: 400px; top: 160px; }
+  49.88% { left: 360px; top: 200px; }
+  78.81% { left: 40px; top: 200px; }
+  83.87% { left: 0px; top: 160px; }
+  94.70% { left: 0px; top: 40px; } 
+  100% { left: 40px; top: 0px; }
+}
+ ```

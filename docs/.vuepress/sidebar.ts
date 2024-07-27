@@ -35,4 +35,7 @@ export default sidebar({
   '/mobile/': [
     'adaptation'
   ],
+  '/css/': [
+    'animation-border'
+  ],
 })
