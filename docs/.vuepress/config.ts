@@ -1,7 +1,12 @@
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress';
 import theme from './theme';
 
 export default defineUserConfig({
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
   lang: 'zh-CN',
   title: 'hanekawa-shiki',
   description: '前端博客',
