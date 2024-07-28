@@ -38,4 +38,7 @@ export default sidebar({
   '/css/': [
     'animation-border'
   ],
+  '/lib/': [
+    'index'
+  ],
 })
