@@ -1,5 +1,5 @@
 ---
-title: rust学习笔记
+title: 从零开始的rust学习笔记
 icon: rust
 category: rust
 tag:

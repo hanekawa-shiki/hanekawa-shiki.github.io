@@ -135,3 +135,18 @@ fn another_function() {
 }
 ```
 
+在函数签名中，必须声明每个参数的类型。`Rust`要求在函数定义中提供类型注解，意味着编译器再也不需要你在代码的其他地方注明类型来指出你的意图。而且，在知道函数需要什么类型后，编译器就能够给出更有用的错误消息。
+
+```rust
+fn main() {
+    print_labeled_measurement(5, 'h');
+}
+
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    println!("The measurement is: {value}{unit_label}");
+}
+```
+
+### 语句与表达式
+
+`Rust`是一门基于表达式（expression-based）的语言。

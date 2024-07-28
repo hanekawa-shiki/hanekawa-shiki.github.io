@@ -28,6 +28,7 @@ export default sidebar({
     'giuhub_actions'
   ],
   '/rust/': [
+    'RADME',
     'setting',
     'basicSyntax',
   ],
