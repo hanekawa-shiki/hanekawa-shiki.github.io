@@ -7,7 +7,7 @@ article: false
 
 以**管理员**打开`PowerShell`，通过`Set-Service -StartupType Automatic ssh-agent`将`ssh-agent`服务的启动类型设为自启，随后键入`Start-Service ssh-agent`启动当前会话下的`ssh-agent`服务。
 
-```dos
+```txt
 PS C:\windows\system32> Set-Service -StartupType Automatic ssh-agent
 PS C:\windows\system32> Start-Service ssh-agent
 PS C:\windows\system32> Get-Service ssh-agent

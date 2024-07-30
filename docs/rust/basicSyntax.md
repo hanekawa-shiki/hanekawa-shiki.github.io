@@ -5,6 +5,8 @@ article: false
 # 基本语法注意点
 `Rust`是**静态类型**（`statically typed`）语言。
 
+`Rust`的缩进风格使用**4个空格**
+
 隐藏与将变量标记为`mut`的区别：
 
 - 隐藏必须使用`let`重新声明，直接赋值会报错，`mut`不会报错；
@@ -147,6 +149,161 @@ fn print_labeled_measurement(value: i32, unit_label: char) {
 }
 ```
 
-### 语句与表达式
+#### 语句与表达式
 
 `Rust`是一门基于表达式（expression-based）的语言。
+
+- 语句（Statements）是执行一些操作但不返回值的指令。
+- 表达式（Expressions）计算并产生一个值。
+
+#### 函数返回值
+
+函数可以向调用它的代码返回值。我们并不对返回值命名，但要在箭头（->）后声明它的类型。在`Rust`中，函数的返回值等同于函数体最后一个表达式的值。使用`return`关键字和指定值，可从函数中提前返回；但大部分函数隐式的返回最后的表达式。
+
+```rust
+fn five() -> i32 {
+    5
+}
+
+fn main() {
+    let x = five();
+
+    println!("The value of x is: {x}");
+}
+```
+
+### 控制流
+
+#### `if`
+
+```rust
+fn main() {
+    let number = 3;
+    // 代码中的条件必须是bool值。如果条件不是bool值，我们将得到一个错误。
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
+}
+```
+
+#### `else if`
+
+```rust
+fn main() {
+    let number = 6;
+
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+}
+```
+
+#### 在`let`语句中使用`if`
+
+**代码块的值是其最后一个表达式的值**
+
+```rust
+fn main() {
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+
+    println!("The value of number is: {number}");
+}
+```
+
+### 循环
+
+`Rust`有三种循环：`loop`、`while`和`for`。
+
+
+#### `loop`
+
+`loop`的一个用例是重试可能会失败的操作
+
+```rust
+fn main() {
+    loop {
+        println!("again!");
+    }
+}
+```
+
+跳出循环
+
+- 在控制台使用`ctrl+c`
+- 使用`break`关键字
+- 使用`continue`关键字跳过当前循环并转到下一个循环。
+
+
+```rust
+fn main() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            // 将返回值加入来停止循环的break表达式，它会被停止的循环返回。
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {result}");
+}
+```
+
+##### 循环标签（消除多个循环之间的歧义）
+
+如果存在嵌套循环，`break`和`continue`应用于此时最内层的循环。你可以选择在一个循环上指定一个**循环标签**（loop label），然后将标签与`break`或`continue`一起使用，使这些关键字应用于已标记的循环而不是最内层的循环。
+
+```rust
+fn main() {
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
+
+        count += 1;
+    }
+    println!("End count = {count}");
+}
+```
+
+#### `while`
+
+当条件为`true`，执行循环。当条件不再为`true`，调用`break`停止循环。
+
+```rust
+fn main() {
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{number}!");
+
+        number -= 1;
+    }
+
+    println!("LIFTOFF!!!");
+}
+```
+
+

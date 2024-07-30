@@ -5620,7 +5620,7 @@ Node.js 的 `crypto` 模块提供了各种加密功能，包括用于处理公�
 
 假设你有一个 PEM 格式的公钥字符串，如下所示：
 
-```pem
+```txt
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtVETRJNyQYjkQm2+ESer
 ...

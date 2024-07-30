@@ -3605,7 +3605,7 @@ node --openssl-config=./path/to/openssl.cnf app.js
 
 假设你正在开发一个需要加密的 HTTPS 服务器，并且你希望使用自签名证书，同时还想要指定某些加密协议和密码套件。你可能会创建一个`openssl.cnf`文件，其中包含了以下内容：
 
-```cnf
+```sh
 [ req ]
 distinguished_name = req_distinguished_name
 x509_extensions = v3_req

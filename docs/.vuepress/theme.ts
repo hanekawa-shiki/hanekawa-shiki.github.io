@@ -78,7 +78,7 @@ export default hopeTheme({
         light: "one-light",
         dark: "one-dark-pro"
       },
-      langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'shell', 'text'],
+      langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'shell', 'text', 'rust', 'python', 'c', 'c++', 'cmd', 'cmake', 'tex', 'bat'],
     },
     blog: {
       excerpt: true,
