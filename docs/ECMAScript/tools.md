@@ -2,7 +2,13 @@
 article: false
 ---
 
-# 工具函数
+# 工具函数整理
+
+## 判断是否是严格模式
+
+```js
+const strict = (function () { return !this }())
+```
 
 ## 获取对象类型
 
@@ -42,6 +48,37 @@ const myCookie = document.cookie.replace(
   "$1",
 );
 
+```
+
+## 基于`promise`的“递归”
+
+```js
+function promiseSequere(inputs, promiseMaker) {
+  inputs = [...inputs];
+  function handleNextInput(outputs) {
+    if (inputs.length === 0) {
+      return outputs;
+    } else {
+      const nextInput = inputs.shift();
+      return promiseMaker(nextInput).then(output => {
+        return outputs.concat(output);
+      }).then(handleNextInput)
+    }
+  }
+  return Promise.resolve([]).then(handleNextInput)
+}
+
+function fetchUrl(url) {
+  return fetch(url).then(res => res.text());
+}
+
+const urls = [];
+
+promiseSequere(urls, fetchUrl).then(res => {
+  console.log(res);
+}).catch(err => {
+  console.log(err);
+})
 ```
 
 ## 常用`api`对比

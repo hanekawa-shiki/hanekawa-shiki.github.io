@@ -2,7 +2,13 @@ import { sidebar } from 'vuepress-theme-hope';
 
 export default sidebar({
   '/document/node-doc/': 'structure',
-  '/ECMAScript/': 'structure',
+  '/ECMAScript/': [
+    'tools',
+    'function',
+    'sync',
+    // 'iterator',
+    // 'metaprogramming',
+  ],
   '/framework_front/vue3/': [
     '1.vue3',
     '2.create',
