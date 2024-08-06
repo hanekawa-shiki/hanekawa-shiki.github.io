@@ -2,7 +2,7 @@
 article: false
 ---
 
-# 基本语法注意点
+# 基本语法
 `Rust`是**静态类型**（`statically typed`）语言。
 
 `Rust`的缩进风格使用**4个空格**
@@ -306,4 +306,14 @@ fn main() {
 }
 ```
 
+### `for`
+
+```rust
+fn main() {
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
+}
+```
 

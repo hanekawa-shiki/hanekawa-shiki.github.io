@@ -37,6 +37,7 @@ export default sidebar({
     'RADME',
     'setting',
     'basicSyntax',
+    'ownership'
   ],
   '/workRecord/': 'structure',
   '/mobile/': [
