@@ -83,6 +83,7 @@ article: true
 
 所有`CSS`逻辑属性都是围绕`inline/block`与`start/end`展开的。
 
+`inline/block`表示方向，`start/end`表示起止方位。 `inline`元素（文字、图片、按钮等）默认是从左往右水平排列的；`block`元素（如<div>、<p>元素等）默认是从上往下垂直排列的。”
 
 
 
