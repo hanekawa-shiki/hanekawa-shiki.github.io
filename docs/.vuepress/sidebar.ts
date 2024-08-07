@@ -44,6 +44,7 @@ export default sidebar({
     'adaptation'
   ],
   '/css/': [
+    'base_concepts',
     'animation-border'
   ],
   '/lib/': [
