@@ -31,7 +31,8 @@ export default sidebar({
     'environment_windows',
     'environment_server',
     'pm2&bash',
-    'giuhub_actions'
+    'giuhub_actions',
+    'domainNameSSL'
   ],
   '/rust/': [
     'RADME',
