@@ -174,12 +174,79 @@ max-height   ↔   max-block-size
 - inset-block-start
 - inset-block-end
 
+缩写：
+- inset-inline
+- inset-block
+
+或者：
+- inset
+
+```css
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+```
+
+## `border-image`
+
+学习关键点：
+- 一是源图像的划分；
+- 二是九宫格尺寸的控制。
+
+### `border-image-source`
+
+图像源
+
+### `border-image-slice`
+
+默认值为100%。
+
+```css
+border-image-slice: <number-percentage>{1,4} && fill?
+```
+
+划分的方位和顺序同`margin`属性、`padding`属性一样，遵循上、右、下、左的顺序。表示在距离源图像四个方位进行划分。
+
+默认中心位置不参与填充，需要填充使用关键字`fill`。
+
+如果`border-image-source`是渐变图像，则渐变图像的尺寸是按元素的`border-box`尺寸来计算的。
 
 
+### `border-image-width`九宫格边框宽度
+
+- 值为数值，这个数值会作为系数和`border-width`的宽度值相乘;
+- 值为具体长度值，如：1px、1rem；
+- 百分比，相对于元素本身尺寸计算，水平方位相对于宽度计算，垂直方位相对于高度计算；
+- `auto`,会使用`border-image-slice`属性划分的尺寸作为九宫格宽度值；
+- 和`border-width`一样，不支持负值；
+- `border-image-width`宽度值很可能超过元素自身尺寸。
 
 
+### `border-image-outset`九宫格中间区域尺寸
+
+```css
+border-image-outset: [ <length> | <number> ]{1,4}
+```
+
+数值是相对于`border-width`计算。
 
 
+### `border-image-repeat`
+
+```css
+border-image-repeat: [ stretch | repeat | round | space ]{1,2}
+```
+
+- `stretch`：默认值，让源图像拉伸以充满显示区域。
+- `repeat`：让源图像紧密相连平铺，保持原始比例，平铺单元在边界位置处可能会被截断。
+- `round`：让源图像紧密相连平铺，适当伸缩，以确保平铺单元在边界位置处不会被截断。
+- `space`：让源图像保持原始尺寸，平铺时彼此保持适当的等宽间隙，以确保平铺单元在边界位置处不会被截断；如果区域的尺寸不足以呈现至少一个源图像单元，则会以空白呈现。兼容性问题，这个关键字要谨慎使用。
 
 
+### 缩写
+
+```css
+border-image: <'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>
+```
 
