@@ -7,4 +7,4 @@
 
 A personal blog using [VuePress](https://v2.vuepress.vuejs.org/) and [VuePress Theme Hope](https://vuepress-theme-hope.github.io/v2/)
 
-## [博客地址](https://hanekawa.top) | [Blog link](https://hanekawa-shiki.github.io)
+## [博客地址](https://hanekawa.top) | [Blog link](https://hanekawa.top)
