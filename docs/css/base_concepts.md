@@ -250,3 +250,5 @@ border-image-repeat: [ stretch | repeat | round | space ]{1,2}
 border-image: <'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>
 ```
 
+## `position:sticky`
+
