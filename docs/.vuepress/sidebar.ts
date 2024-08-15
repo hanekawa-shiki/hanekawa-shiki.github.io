@@ -17,7 +17,8 @@ export default sidebar({
     '5.compare',
     '6.newComponents',
     '7.others',
-    '8.skill'
+    '8.skill',
+    'different_between_2&3'
   ],
   '/framework_front/react/': [
     '1.react',
