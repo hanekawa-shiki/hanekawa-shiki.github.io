@@ -13,7 +13,7 @@
     "@vue/repl": "4.3.1",
     "@vuepress/bundler-vite": "2.0.0-rc.14",
     "@vuepress/bundler-webpack": "2.0.0-rc.14",
-    "@vuepress/plugin-pwa": "2.0.0-rc.40",
+    "@vuepress/plugin-pwa": "2.0.0-rc.41",
     "@waline/client": "3.3.0",
     "cross-env": "7.0.3",
     "echarts": "5.5.1",
