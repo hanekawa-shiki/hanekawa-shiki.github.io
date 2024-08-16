@@ -28,7 +28,7 @@ export default hopeTheme({
   hideSiteNameOnMobile: true, // 是否在移动视图下隐藏站点名称
 
   sidebar: sidebar,
-  headerDepth: 3,
+  headerDepth: 5,
 
   breadcrumb: true, // 路径导航
   prevLink: true,
