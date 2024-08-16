@@ -4,19 +4,18 @@ icon: linux
 category: 域名
 tag:
   - SSL
-  - Let's Encrypt
   - namesilo
 isOriginal: true
 date: 2022-11-18
 ---
 
-本教程记录的是通过使用`acme.sh`申请`Let's Encrypt`泛域名证书,安装证书及`nginx`配置使用证书,并通过配置实现`ssl`证书自动续期
+本教程记录的是通过使用`acme.sh`申请泛域名证书,安装证书及`nginx`配置使用证书,并通过配置实现`ssl`证书自动续期
 
 <!-- more -->
 
 ## 环境
 
-测试环境: `Ubuntu 20.04`、`nginx`
+测试环境: `Ubuntu 22.04`、`nginx`
 
 
 使用到的工具:
@@ -60,7 +59,7 @@ export Namesilo_Key="xxxxxx"
 
 生成证书:
 ```bash
-acme.sh --issue --dns dns_namesilo --dnssleep 900 -d example.com -d www.example.com
+acme.sh --issue --dns dns_namesilo --dnssleep 900 -d example.com -d *.example.com
 ```
 建议将900改大为1800,因为`namesilo`解析比较慢
 
@@ -96,7 +95,7 @@ crontab  -l
 
 ## 更新`acme.sh`
 
-目前由于`acme`协议和`letsencrypt CA`都在频繁的更新, 因此`acme.sh`也经常更新以保持同步.
+目前由于`acme`协议在频繁的更新, 因此`acme.sh`也经常更新以保持同步.
 
 升级`acme.sh`到最新版 :
 

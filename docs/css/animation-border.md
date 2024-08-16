@@ -3,7 +3,7 @@ icon: css
 category: css
 tag:
   - css
-isOriginal: true
+isOriginal: false
 timeline: true
 date: 2024-07-27
 article: true
@@ -64,7 +64,11 @@ article: true
   100% { left: 40px; top: 0px; }
 }
  </style>
- 
+
+:::tip
+ 右上角切换成夜间模式效果更佳！
+:::
+
  ```html
   <div class="container">
    <div class="moving-element"></div>
@@ -73,7 +77,7 @@ article: true
  ```
 
  ```css
- .container {
+.container {
   position: relative;
   width: 400px;
   height: 200px;
@@ -118,3 +122,7 @@ article: true
   100% { left: 40px; top: 0px; }
 }
  ```
+
+ ## 参考
+
+- [1] [【第3274期】纯CSS丝滑边框线条动画](https://mp.weixin.qq.com/s/-4N6cX8PtGWtB1GSmoIfWQ)

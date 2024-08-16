@@ -2,7 +2,13 @@ import { sidebar } from 'vuepress-theme-hope';
 
 export default sidebar({
   '/document/node-doc/': 'structure',
-  '/ECMAScript/': 'structure',
+  '/ECMAScript/': [
+    'tools',
+    'function',
+    'sync',
+    // 'iterator',
+    // 'metaprogramming',
+  ],
   '/framework_front/vue3/': [
     '1.vue3',
     '2.create',
@@ -11,7 +17,8 @@ export default sidebar({
     '5.compare',
     '6.newComponents',
     '7.others',
-    '8.skill'
+    '8.skill',
+    'different_between_2&3'
   ],
   '/framework_front/react/': [
     '1.react',
@@ -25,18 +32,21 @@ export default sidebar({
     'environment_windows',
     'environment_server',
     'pm2&bash',
-    'giuhub_actions'
+    'giuhub_actions',
+    'domainNameSSL'
   ],
   '/rust/': [
     'RADME',
     'setting',
     'basicSyntax',
+    'ownership'
   ],
   '/workRecord/': 'structure',
   '/mobile/': [
     'adaptation'
   ],
   '/css/': [
+    'base_concepts',
     'animation-border'
   ],
   '/lib/': [
