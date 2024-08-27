@@ -17,7 +17,7 @@
     "@waline/client": "3.3.0",
     "cross-env": "7.0.3",
     "echarts": "5.5.1",
-    "flowchart.ts": "3.0.0",
+    "flowchart.ts": "3.0.1",
     "katex": "0.16.11",
     "mermaid": "10.9.1",
     "reveal.js": "5.1.0",
