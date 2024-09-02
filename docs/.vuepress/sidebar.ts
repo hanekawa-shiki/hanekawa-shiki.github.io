@@ -35,8 +35,16 @@ export default sidebar({
     'giuhub_actions',
     'domainNameSSL'
   ],
+  '/docker/' : [
+    'index',
+    'install',
+    'commomCmds',
+    'dockerImages',
+    'volume',
+    'dockerFileAnalyze'
+  ],
   '/rust/': [
-    'RADME',
+    'index',
     'setting',
     'basicSyntax',
     'ownership'

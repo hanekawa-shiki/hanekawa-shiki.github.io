@@ -2,7 +2,7 @@
 article: false
 ---
 
-# `Docker`安装
+# 安装
 
 `Docker`安装方式可以参照[官方文档](https://docs.docker.com/engine/install/)
 

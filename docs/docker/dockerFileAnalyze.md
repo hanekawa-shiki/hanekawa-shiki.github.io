@@ -2,9 +2,9 @@
 article: false
 ---
 
-## `dockerFile`解析
+# `dockerFile`解析
 
-### 是什么
+## 是什么
 
 [Dockerfile](https://docs.docker.com/engine/reference/builder/)是用来构建`Docker`镜像的文本文件，是由一条条构建镜像所需的指令和参数构成的脚本。
 
@@ -32,7 +32,7 @@ article: false
 - 4.`docker`再基于刚提交的镜像运行一个新容器
 - 5.执行`dockerfile`中的下一条指令直到所有指令都执行完成
 
-### 小总结
+## 小总结
   
 从应用软件的角度来看，`Dockerfile`、`Docker`镜像与`Docker`容器分别代表软件的三个不同阶段：  
 - `Dockerfile`是软件的原材料 
@@ -176,6 +176,6 @@ nginx -c /etc/nginx/ new.conf
 
 如果 Dockerfile 中如果存在多个 ENTRYPOINT 指令，仅最后一个生效。
 
-### 小总结
+## 小总结
 
 ![](./img/005.png)
