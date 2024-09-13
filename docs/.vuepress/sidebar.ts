@@ -54,10 +54,13 @@ export default sidebar({
     'adaptation'
   ],
   '/css/': [
-    'base_concepts',
-    'animation-border'
+    'base_concepts'
   ],
   '/lib/': [
     'index'
   ],
+  '/tips/': [
+    'animation-border',
+    'view-transitions'
+  ]
 })

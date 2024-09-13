@@ -1,6 +1,6 @@
 ---
 icon: css
-category: css
+category: tips
 tag:
   - css
 isOriginal: false
