@@ -60,7 +60,7 @@ article: true
 ```js
 const  handleClick = e =>{
   const target = e.target
-  document.startViewTransition(() => {
+  document.startViewTransition && document.startViewTransition(() => {
     target.hasAttribute('style') && target.remove()
   })
 }
