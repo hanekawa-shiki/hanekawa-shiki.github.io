@@ -66,4 +66,4 @@ const  handleClick = e =>{
 }
 ```
 
-![查看兼容性](https://caniuse.com/?search=view-transition-name)
+[查看兼容性](https://caniuse.com/?search=view-transition-name)
