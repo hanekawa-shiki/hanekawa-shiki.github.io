@@ -1,5 +1,5 @@
 ---
-layout: Slide
+layout: SlidePage
 title: 简单的自我介绍
 icon: people
 tag:

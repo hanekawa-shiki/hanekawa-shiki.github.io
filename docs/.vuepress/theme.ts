@@ -173,6 +173,8 @@ export default hopeTheme({
           }
         ]
       }
-    }
+    },
+
+    revealjs: true
   }
 });
