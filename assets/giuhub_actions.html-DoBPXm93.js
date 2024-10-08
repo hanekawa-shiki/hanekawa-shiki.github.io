@@ -1,0 +1,44 @@
+import{_ as s}from"./plugin-vue_export-helper-DlAUqK2U.js";import{c as a,b as i,o as e}from"./app-DMAFBZ2a.js";const p={};function l(c,n){return e(),a("div",null,n[0]||(n[0]=[i(`<h1 id="github-actions是什么" tabindex="-1"><a class="header-anchor" href="#github-actions是什么"><span><code>github actions</code>是什么</span></a></h1><p><a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer">官网文档</a></p><div class="hint-container info"><p class="hint-container-title">官网介绍</p><p>GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。</p><p>GitHub Actions 不仅仅是 DevOps，还允许您在存储库中发生其他事件时运行工作流程。 例如，您可以运行工作流程，以便在有人在您的存储库中创建新问题时自动添加相应的标签。</p><p>GitHub 提供 Linux、Windows 和 macOS 虚拟机来运行工作流程，或者您可以在自己的数据中心或云基础架构中托管自己的自托管运行器。</p></div><p>可以简单理解:对于我们此次用于自动化部署来说,<code>github actions</code>就是一台配置强大的<code>Liunx</code>服务器!</p><h2 id="简单使用" tabindex="-1"><a class="header-anchor" href="#简单使用"><span>简单使用</span></a></h2><p>在<code>git</code>项目目录下新建<code>.github/workflows</code>文件,新建<code>deploy-docs.yml</code>配置文件</p><p>具体配置可以根据以下文件进行修改</p><div class="language-yml line-numbers-mode" data-highlighter="shiki" data-ext="yml" data-title="yml" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>name: 部署文档</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>on:</span></span>
+<span class="line"><span>  push:</span></span>
+<span class="line"><span>    branches:</span></span>
+<span class="line"><span>      # 确保这是你正在使用的分支名称</span></span>
+<span class="line"><span>      - master</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>jobs:</span></span>
+<span class="line"><span>  deploy-gh-pages:</span></span>
+<span class="line"><span>    name: Deploy Gh Pages</span></span>
+<span class="line"><span>    runs-on: ubuntu-latest</span></span>
+<span class="line"><span>    steps:</span></span>
+<span class="line"><span>      - name: Checkout</span></span>
+<span class="line"><span>        uses: actions/checkout@v3</span></span>
+<span class="line"><span>        with:</span></span>
+<span class="line"><span>          fetch-depth: 0</span></span>
+<span class="line"><span>          # 如果你文档需要 Git 子模块，取消注释下一行</span></span>
+<span class="line"><span>          # submodules: true</span></span>
+<span class="line"><span>      - uses: pnpm/action-setup@v2.2.2</span></span>
+<span class="line"><span>        with:</span></span>
+<span class="line"><span>          version: 7</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>      - name: Set Node.js</span></span>
+<span class="line"><span>        uses: actions/setup-node@v3</span></span>
+<span class="line"><span>        with:</span></span>
+<span class="line"><span>          node-version: 16.x</span></span>
+<span class="line"><span>          cache: &#39;pnpm&#39;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>      - name: Install Dependencies</span></span>
+<span class="line"><span>        run: pnpm install</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>      - name: Build</span></span>
+<span class="line"><span>        env:</span></span>
+<span class="line"><span>          NODE_OPTIONS: --max_old_space_size=4096</span></span>
+<span class="line"><span>        run: pnpm run build</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>      - name: Deploy Dist</span></span>
+<span class="line"><span>        uses: JamesIves/github-pages-deploy-action@v4</span></span>
+<span class="line"><span>        with:</span></span>
+<span class="line"><span>          # 这是文档部署到的分支名称</span></span>
+<span class="line"><span>          branch: gh-pages</span></span>
+<span class="line"><span>          folder: dist</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,8)]))}const o=s(p,[["render",l],["__file","giuhub_actions.html.vue"]]),r=JSON.parse('{"path":"/website_build/giuhub_actions.html","title":"github actions是什么","lang":"zh-CN","frontmatter":{"article":false,"description":"github actions是什么 官网文档 官网介绍 GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。 GitHub Actions 不仅仅是 DevOps，还允许您在存储库中发生其他事件时运行工作...","gitInclude":[],"head":[["meta",{"property":"og:url","content":"https://hanekawa.top/website_build/giuhub_actions.html"}],["meta",{"property":"og:site_name","content":"hanekawa-shiki"}],["meta",{"property":"og:title","content":"github actions是什么"}],["meta",{"property":"og:description","content":"github actions是什么 官网文档 官网介绍 GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。 GitHub Actions 不仅仅是 DevOps，还允许您在存储库中发生其他事件时运行工作..."}],["meta",{"property":"og:type","content":"website"}],["meta",{"property":"og:locale","content":"zh-CN"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"WebPage\\",\\"name\\":\\"github actions是什么\\",\\"description\\":\\"github actions是什么 官网文档 官网介绍 GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。 GitHub Actions 不仅仅是 DevOps，还允许您在存储库中发生其他事件时运行工作...\\"}"]]},"headers":[{"level":2,"title":"简单使用","slug":"简单使用","link":"#简单使用","children":[]}],"readingTime":{"minutes":1.36,"words":408},"filePathRelative":"website_build/giuhub_actions.md","excerpt":"\\n<p><a href=\\"https://docs.github.com/en/actions\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">官网文档</a></p>\\n<div class=\\"hint-container info\\">\\n<p class=\\"hint-container-title\\">官网介绍</p>\\n<p>GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。</p>\\n<p>GitHub Actions 不仅仅是 DevOps，还允许您在存储库中发生其他事件时运行工作流程。 例如，您可以运行工作流程，以便在有人在您的存储库中创建新问题时自动添加相应的标签。</p>\\n<p>GitHub 提供 Linux、Windows 和 macOS 虚拟机来运行工作流程，或者您可以在自己的数据中心或云基础架构中托管自己的自托管运行器。</p>\\n</div>","autoDesc":true}');export{o as comp,r as data};
