@@ -57,7 +57,8 @@ rustup update
 rustup self uninstall
 
 # 创建项目
-cargo new
+cargo new name
+cargo new name --vcs none # 不创建 .git 目录
 
 # 构建项目
 cargo build
