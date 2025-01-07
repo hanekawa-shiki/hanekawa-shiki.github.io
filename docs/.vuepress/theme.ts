@@ -72,14 +72,51 @@ export default hopeTheme({
     // timeline: '发布于'
   },
 
-  plugins: {
-    shiki: {
+  markdown: {
+    highlighter: {
+      type: "shiki",
       themes: {
         light: "one-light",
         dark: "one-dark-pro"
       },
-      langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'shell', 'text', 'rust', 'python', 'c', 'c++', 'cmd', 'cmake', 'tex', 'bat'],
+      langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'shell', 'text', 'rust', 'python', 'c', 'c++', 'cmd', 'cmake', 'tex', 'bat', 'yml', 'yaml', 'jsx'],
     },
+    revealjs: true,
+    gfm: true,
+    vPre: true,
+    align: true,
+    attrs: true,
+    sup: true,
+    sub: true,
+    footnote: false,
+    mark: true,
+    tasklist: false,
+    include: true,
+    echarts: true,
+    flowchart: true,
+    mermaid: true,
+    // stylize: [
+    //   {
+    //     matcher: 'Recommended',
+    //     replacer: ({ tag }) => {
+    //       if (tag === 'em')
+    //         return {
+    //           tag: 'Badge',
+    //           attrs: { type: 'tip' },
+    //           content: 'Recommended',
+    //         };
+    //     },
+    //   },
+    // ],
+    // playground: {},
+    vuePlayground: true,
+    demo: true,
+    playground: {
+      presets: ['ts', 'vue']
+    }
+  },
+
+  plugins: {
     blog: {
       excerpt: true,
       excerptSeparator: '<!-- more -->'
@@ -92,43 +129,6 @@ export default hopeTheme({
     //   serverURL: 'https://blog-q5gt9jo8g-kamishima-kaede.vercel.app/'
     // },
     comment: false,
-
-    mdEnhance: {
-      gfm: true,
-      vPre: true,
-      align: true,
-      attrs: true,
-      sup: true,
-      sub: true,
-      footnote: false,
-      mark: true,
-      tasklist: false,
-      include: true,
-      chart: false,
-      echarts: true,
-      flowchart: true,
-      mermaid: true,
-      // stylize: [
-      //   {
-      //     matcher: 'Recommended',
-      //     replacer: ({ tag }) => {
-      //       if (tag === 'em')
-      //         return {
-      //           tag: 'Badge',
-      //           attrs: { type: 'tip' },
-      //           content: 'Recommended',
-      //         };
-      //     },
-      //   },
-      // ],
-      // playground: {},
-      vuePlayground: true,
-      demo: true,
-      playground: {
-        presets: ['ts', 'vue']
-      }
-    },
-
     pwa: {
       update: 'available',
       favicon: '/favicon.ico',
@@ -137,11 +137,7 @@ export default hopeTheme({
       maxSize: 3072,
       apple: {
         icon: '/assets/icons/apple-touch-icon.png',
-        statusBarColor: 'white'
-      },
-      msTile: {
-        image: '/assets/icons/ms-icon-144.png',
-        color: '#ffffff'
+        statusBarColor: 'default'
       },
       manifest: {
         name: 'hanekawa-shiki 的个人博客',
@@ -173,8 +169,6 @@ export default hopeTheme({
           }
         ]
       }
-    },
-
-    revealjs: true
+    }
   }
 });

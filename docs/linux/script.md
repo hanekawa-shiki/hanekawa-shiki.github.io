@@ -48,3 +48,9 @@ done
 
 exit
 ```
+
+## `linux`批量删除`macOS`生成的缓存文件
+
+```bash
+find /path/to/directory -name '._*' -exec rm -f {} \;
+```
