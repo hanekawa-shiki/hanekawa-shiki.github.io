@@ -16,7 +16,7 @@
     "@vuepress/plugin-pwa": "2.0.0-rc.66",
     "@vuepress/plugin-redirect": "2.0.0-rc.68",
     "@vuepress/plugin-revealjs": "2.0.0-rc.67",
-    "@waline/client": "3.4.2",
+    "@waline/client": "3.4.3",
     "cross-env": "7.0.3",
     "echarts": "5.6.0",
     "flowchart.ts": "3.0.1",
