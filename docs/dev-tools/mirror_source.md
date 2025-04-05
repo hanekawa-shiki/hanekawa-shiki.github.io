@@ -2,10 +2,6 @@
 title: 镜像源收集
 icon: link
 category: 镜像源
-tag:
-  - node
-  - pnpm
-  - linux
 isOriginal: true
 timeline: true
 date: 2021-07-28

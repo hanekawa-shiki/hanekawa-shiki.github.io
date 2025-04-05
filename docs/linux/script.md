@@ -1,6 +1,9 @@
 ---
 article: true
 date: 2024-09-25
+category: linux
+tag:
+  - openmediavault
 ---
 
 <!-- more -->

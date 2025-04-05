@@ -1,6 +1,7 @@
 ---
 article: true
 date: 2025-01-07
+category: git
 ---
 
 <!-- more -->

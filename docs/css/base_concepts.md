@@ -2,8 +2,6 @@
 title: CSS个人学习整理
 icon: css
 category: css
-tag:
-  - css
 isOriginal: true
 timeline: true
 date: 2024-08-07
