@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "clean-dev": "vuepress dev docs --clean-cache",
-    "local-build": "cross-env NODE_OPTIONS='--max-old-space-size=8000' vuepress build docs",
+    "local-build": "cross-env NODE_OPTIONS='--max-old-space-size=10240' vuepress build docs",
     "build": "vuepress build docs"
   },
   "devDependencies": {
