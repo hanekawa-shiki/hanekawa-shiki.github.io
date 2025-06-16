@@ -28,7 +28,6 @@ export default hopeTheme({
   hideSiteNameOnMobile: true, // 是否在移动视图下隐藏站点名称
 
   sidebar: sidebar,
-  headerDepth: 5,
 
   breadcrumb: true, // 路径导航
   prevLink: true,
@@ -62,7 +61,6 @@ export default hopeTheme({
   darkmode: 'switch',
 
   blog: {
-    sidebarDisplay: 'mobile',
     articlePerPage: 10,
     avatar: '/assets/svg/logo.svg',
     // roundAvatar: true,
