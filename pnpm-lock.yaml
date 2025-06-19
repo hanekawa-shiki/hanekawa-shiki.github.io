@@ -13,8 +13,8 @@ importers:
         version: 3.5.17
     devDependencies:
       '@vue/repl':
-        specifier: 4.5.1
-        version: 4.5.1
+        specifier: 4.6.1
+        version: 4.6.1
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.23
         version: 2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0)
@@ -56,7 +56,7 @@ importers:
         version: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.92
-        version: 2.0.0-rc.92(@vue/repl@4.5.1)(@vuepress/plugin-pwa@2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@vuepress/plugin-revealjs@2.0.0-rc.107(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@waline/client@3.5.7)(echarts@5.6.0)(flowchart.ts@3.0.1)(katex@0.16.22)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
+        version: 2.0.0-rc.92(@vue/repl@4.6.1)(@vuepress/plugin-pwa@2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@vuepress/plugin-revealjs@2.0.0-rc.107(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@waline/client@3.5.7)(echarts@5.6.0)(flowchart.ts@3.0.1)(katex@0.16.22)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
 
 packages:
 
@@ -1142,67 +1142,56 @@ packages:
     resolution: {integrity: sha512-gTJ/JnnjCMc15uwB10TTATBEhK9meBIY+gXP4s0sHD1zHOaIh4Dmy1X9wup18IiY9tTNk5gJc4yx9ctj/fjrIw==}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.43.0':
     resolution: {integrity: sha512-ZJ3gZynL1LDSIvRfz0qXtTNs56n5DI2Mq+WACWZ7yGHFUEirHBRt7fyIk0NsCKhmRhn7WAcjgSkSVVxKlPNFFw==}
     cpu: [arm]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.43.0':
     resolution: {integrity: sha512-8FnkipasmOOSSlfucGYEu58U8cxEdhziKjPD2FIa0ONVMxvl/hmONtX/7y4vGjdUhjcTHlKlDhw3H9t98fPvyA==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.43.0':
     resolution: {integrity: sha512-KPPyAdlcIZ6S9C3S2cndXDkV0Bb1OSMsX0Eelr2Bay4EsF9yi9u9uzc9RniK3mcUGCLhWY9oLr6er80P5DE6XA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-loongarch64-gnu@4.43.0':
     resolution: {integrity: sha512-HPGDIH0/ZzAZjvtlXj6g+KDQ9ZMHfSP553za7o2Odegb/BEfwJcR0Sw0RLNpQ9nC6Gy8s+3mSS9xjZ0n3rhcYg==}
     cpu: [loong64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.43.0':
     resolution: {integrity: sha512-gEmwbOws4U4GLAJDhhtSPWPXUzDfMRedT3hFMyRAvM9Mrnj+dJIFIeL7otsv2WF3D7GrV0GIewW0y28dOYWkmw==}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.43.0':
     resolution: {integrity: sha512-XXKvo2e+wFtXZF/9xoWohHg+MuRnvO29TI5Hqe9xwN5uN8NKUYy7tXUG3EZAlfchufNCTHNGjEx7uN78KsBo0g==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-musl@4.43.0':
     resolution: {integrity: sha512-ruf3hPWhjw6uDFsOAzmbNIvlXFXlBQ4nk57Sec8E8rUxs/AI4HD6xmiiasOOx/3QxS2f5eQMKTAwk7KHwpzr/Q==}
     cpu: [riscv64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-s390x-gnu@4.43.0':
     resolution: {integrity: sha512-QmNIAqDiEMEvFV15rsSnjoSmO0+eJLoKRD9EAa9rrYNwO/XRCtOGM3A5A0X+wmG+XRrw9Fxdsw+LnyYiZWWcVw==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.43.0':
     resolution: {integrity: sha512-jAHr/S0iiBtFyzjhOkAics/2SrXE092qyqEg96e90L3t9Op8OTzS6+IX0Fy5wCt2+KqeHAkti+eitV0wvblEoQ==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.43.0':
     resolution: {integrity: sha512-3yATWgdeXyuHtBhrLt98w+5fKurdqvs8B53LaoKD7P7H7FKOONLsBVMNl9ghPQZQuYcceV5CDyPfyfGpMWD9mQ==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.43.0':
     resolution: {integrity: sha512-wVzXp2qDSCOpcBCT5WRWLmpJRIzv23valvcTwMHEobkjippNf+C3ys/+wf07poPkeNix0paTNemB2XrHr2TnGw==}
@@ -1546,8 +1535,8 @@ packages:
   '@vue/reactivity@3.5.17':
     resolution: {integrity: sha512-l/rmw2STIscWi7SNJp708FK4Kofs97zc/5aEPQh4bOsReD/8ICuBcEmS7KGwDj5ODQLYWVN2lNibKJL1z5b+Lw==}
 
-  '@vue/repl@4.5.1':
-    resolution: {integrity: sha512-YYXvFue2GOrZ6EWnoA8yQVKzdCIn45+tpwJHzMof1uwrgyYAVY9ynxCsDYeAuWcpaAeylg/nybhFuqiFy2uvYA==}
+  '@vue/repl@4.6.1':
+    resolution: {integrity: sha512-tgeEa+QXzqbFsAIbq/dCXzOJxIW2Nq1F79KXRjbKyPt1ODpCx86bDbFgNzFcBEK3In2/mjPTMpN7fSD6Ig0Qsw==}
 
   '@vue/runtime-core@3.5.17':
     resolution: {integrity: sha512-QQLXa20dHg1R0ri4bjKeGFKEkJA7MMBxrKo2G+gJikmumRS7PTD4BOU9FKrDQWMKowz7frJJGqBffYMgQYS96Q==}
@@ -3493,28 +3482,24 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss-linux-arm64-musl@1.30.1:
     resolution: {integrity: sha512-jmUQVx4331m6LIX+0wUhBbmMX7TCfjF5FoOH6SD1CttzuYlGNVpA7QnrmLxrsub43ClTINfGSYyHe2HWeLl5CQ==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   lightningcss-linux-x64-gnu@1.30.1:
     resolution: {integrity: sha512-piWx3z4wN8J8z3+O5kO74+yr6ze/dKmPnI7vLqfSqI8bccaTGY5xiSGVIJBDd5K5BHlvVLpUB3S2YCfelyJ1bw==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss-linux-x64-musl@1.30.1:
     resolution: {integrity: sha512-rRomAK7eIkL+tHY0YPxbc5Dra2gXlI63HL+v1Pdi1a3sC+tJTcFrHX+E86sulgAXeI7rSzDYhPSeHHjqFhqfeQ==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   lightningcss-win32-arm64-msvc@1.30.1:
     resolution: {integrity: sha512-mSL4rqPi4iXq5YVqzSsJgMVFENoa4nGTT/GjO2c0Yl9OuQfPsIfncvLrEW6RbbB24WtZ3xP/2CCmI3tNkNV4oA==}
@@ -7002,7 +6987,7 @@ snapshots:
     dependencies:
       '@vue/shared': 3.5.17
 
-  '@vue/repl@4.5.1': {}
+  '@vue/repl@4.6.1': {}
 
   '@vue/runtime-core@3.5.17':
     dependencies:
@@ -11061,7 +11046,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-plugin-md-enhance@2.0.0-rc.90(@vue/repl@4.5.1)(echarts@5.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)):
+  vuepress-plugin-md-enhance@2.0.0-rc.90(@vue/repl@4.6.1)(echarts@5.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)):
     dependencies:
       '@mdit/plugin-container': 0.21.0(markdown-it@14.1.0)
       '@mdit/plugin-demo': 0.21.0(markdown-it@14.1.0)
@@ -11077,7 +11062,7 @@ snapshots:
       vuepress: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)
       vuepress-shared: 2.0.0-rc.90(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
     optionalDependencies:
-      '@vue/repl': 4.5.1
+      '@vue/repl': 4.6.1
       echarts: 5.6.0
       flowchart.ts: 3.0.1
       mermaid: 11.6.0
@@ -11096,7 +11081,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.92(@vue/repl@4.5.1)(@vuepress/plugin-pwa@2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@vuepress/plugin-revealjs@2.0.0-rc.107(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@waline/client@3.5.7)(echarts@5.6.0)(flowchart.ts@3.0.1)(katex@0.16.22)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)):
+  vuepress-theme-hope@2.0.0-rc.92(@vue/repl@4.6.1)(@vuepress/plugin-pwa@2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@vuepress/plugin-revealjs@2.0.0-rc.107(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)))(@waline/client@3.5.7)(echarts@5.6.0)(flowchart.ts@3.0.1)(katex@0.16.22)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.108(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
@@ -11135,7 +11120,7 @@ snapshots:
       vue: 3.5.17
       vuepress: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17)
       vuepress-plugin-components: 2.0.0-rc.90(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
-      vuepress-plugin-md-enhance: 2.0.0-rc.90(@vue/repl@4.5.1)(echarts@5.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
+      vuepress-plugin-md-enhance: 2.0.0-rc.90(@vue/repl@4.6.1)(echarts@5.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(mermaid@11.6.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.99.9))(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
       vuepress-shared: 2.0.0-rc.90(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
     optionalDependencies:
       '@vuepress/plugin-pwa': 2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.1)(jiti@1.21.7)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.42.0))(@vuepress/bundler-webpack@2.0.0-rc.23)(vue@3.5.17))
