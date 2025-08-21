@@ -68,7 +68,7 @@ find /path/to/directory -name '._*' -exec rm -f {} \;
 LOGTAG="wan6-refresh"
 logger -t $LOGTAG "热插拔脚本触发：操作=$ACTION 接口=$INTERFACE"
 
-if [ "$INTERFACE" = "wan6" ] && [ "$ACTION" = "ifup" ]; then
+if [ "$INTERFACE" = "wan6" ] && [ "$ACTION" = "ifup" -o "$ACTION" = "ifupdate" ]; then
     logger -t $LOGTAG "检测 IPv6 地址前缀是否发生变化"
 
     # 取第一个 IPv6 地址
