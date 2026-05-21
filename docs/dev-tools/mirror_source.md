@@ -49,14 +49,14 @@ pnpm config set registry https://registry.npmmirror.com/
 
 设置`Node.js`镜像地址：
 ```bash
-pnpm config set node-mirror:release https://mirrors.aliyun.com/nodejs-release/
+pnpm config set node-mirror:release https://npmmirror.com/mirrors/node/
 ```
 
 如果设置报错,原因一般是没有安装`npm`,可以手动创建`.npmrc`文件,然后添加:  
 
 ```bash
 registry=https://registry.npmmirror.com/
-node-mirror:release=https://mirrors.aliyun.com/nodejs-release/
+node-mirror:release=https://npmmirror.com/mirrors/node/
 ```
 
 `.npmrc`文件所在位置如下,根据具体情况在所在位置创建:
