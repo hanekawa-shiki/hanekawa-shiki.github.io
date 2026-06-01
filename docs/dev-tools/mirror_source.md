@@ -66,6 +66,9 @@ node-mirror:release=https://npmmirror.com/mirrors/node/
 
 
 然后就可以使用`pnpm env`命令来管理`Node.js`版本。
+::: warning
+`pnpm env` 已弃用。 请改用 `pnpm runtime`。[详情](https://pnpm.io/cli/env)
+:::
 ```bash
 # 安装
 # 安装 LTS 版本的 Node.js
