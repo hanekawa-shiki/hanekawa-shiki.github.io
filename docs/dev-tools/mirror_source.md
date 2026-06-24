@@ -44,8 +44,10 @@ iwr https://get.pnpm.io/install.ps1 -useb | iex
 
 `pnpm`更新，或者更新至指定版本
 
+::: warning
+如果是在配置了 packageManager 的项目内执行，它只会更新项目配置，不会更新全局。
+:::
 ```bash
-# 注意：如果是在配置了 packageManager 的项目内执行，它只会更新项目配置，不会更新全局。
 pnpm self-update [10.34.4]
 ```
 
