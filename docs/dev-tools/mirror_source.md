@@ -44,12 +44,13 @@ iwr https://get.pnpm.io/install.ps1 -useb | iex
 
 `pnpm`更新，或者更新至指定版本
 
-::: warning
-如果是在配置了 packageManager 的项目内执行，它只会更新项目配置，不会更新全局。
-:::
 ```bash
 pnpm self-update [10.34.4]
 ```
+
+::: warning
+如果是在配置了 packageManager 的项目内执行，它只会更新项目配置，不会更新全局。
+:::
 
 设置`npm`包镜像地址：
 ```bash
@@ -61,11 +62,12 @@ pnpm config set registry https://registry.npmmirror.com/
 pnpm config set node-mirror https://npmmirror.com/mirrors/node/
 ```
 
-或者可以在当前用户目录下手动创建`.npmrc`文件,然后添加:  
+或者可以在当前用户目录下手动创建`.npmrc`文件,然后添加: 
 
 ```bash
 registry=https://registry.npmmirror.com/
 node-mirror=https://npmmirror.com/mirrors/node/
+save-exact=true
 ```
 
 `.npmrc`文件所在位置如下,根据具体情况在所在位置创建:
@@ -74,10 +76,12 @@ node-mirror=https://npmmirror.com/mirrors/node/
 - 项目配置文件：`$项目根目录/.npmrc`
 
 
-然后就可以使用`pnpm env`命令来管理`Node.js`版本。
+使用`pnpm env`命令来管理`Node.js`版本。
+
 ::: warning
 `pnpm env` 已弃用。 请改用 `pnpm runtime`。[详情](https://pnpm.io/cli/env)
 :::
+
 ```bash
 # 安装
 # 安装 LTS 版本的 Node.js
@@ -106,6 +110,24 @@ pnpm env list --remote 16
 # 移除
 # 移除指定版本的 Node.js
 pnpm env remove --global 14.0.0 16.2.3
+```
+
+ `pnpm runtime`命令来管理`js`运行时版本
+
+```bash
+pnpm runtime set <name> <version> [-g]
+
+# 全局安装/切换到指定的 Node.js 版本：
+pnpm runtime set node 22.12.0 -g
+
+# 全局安装/切换到最新的长期支持版 (LTS)：
+pnpm runtime set node lts -g
+
+# 安装带有代号的版本：
+pnpm runtime set node argon -g
+
+# 管理其他运行时
+pnpm runtime set deno 2 -g
 ```
 
 ## 发布`npm`包流程
