@@ -251,3 +251,34 @@ pnpm config set electron_mirror https://npmmirror.com/mirrors/electron/
 本人一般使用中科大源,这是一个中科大源镜像生成工具[https://mirrors.ustc.edu.cn/repogen/](https://mirrors.ustc.edu.cn/repogen/),包括`Archlinux`、`Debian`、`Ubuntu`
 
 其他`Ubuntu`国内镜像源请在头部连接中查找
+
+## `Rustup`镜像
+
+将下面的环境变量配置到您的`Shell`文件中后，并重启终端
+
+```bash
+export RUSTUP_UPDATE_ROOT=https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
+export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+```
+
+重启终端后，执行`Rust`安装命令
+
+```bash
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
+配置`crates.io`镜像，修改配置`~/.cargo/config`
+
+```bash
+[source.crates-io]
+replace-with = 'tuna'
+
+[source.tuna]
+registry = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
+
+[registries.tuna]
+index = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
+
+[net]
+git-fetch-with-cli = true
+```
