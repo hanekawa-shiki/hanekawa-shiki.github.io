@@ -282,3 +282,20 @@ index = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
 [net]
 git-fetch-with-cli = true
 ```
+
+## `pip`镜像
+
+```bash
+pip3 config set global.index-url [url]
+# https://mirrors.ustc.edu.cn/pypi/simple
+# https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+# https://mirrors.aliyun.com/pypi/simple
+
+# 恢复默认镜像
+pip3 config unset global.index-url
+
+# 常用命令
+pip3 install pkg
+pip3 uninstall pkg
+pip3 list
+```
